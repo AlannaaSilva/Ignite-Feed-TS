@@ -1,4 +1,4 @@
-import { Post } from "./components/Post";
+import { Post, PostProps } from "./components/Post";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 
@@ -6,12 +6,12 @@ import styles from "./App.module.css";
 
 import "./global.css";
 
-const posts = [
+const posts: PostProps[] = [
 {
   id: 1,
   author: {
     avatarUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-    name: "João Almeida",
+    name: "Jõao Almeida",
     role: "Web Developer"
   },
   content: [
