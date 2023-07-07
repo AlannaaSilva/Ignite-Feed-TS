@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alannaasilva.github.io/Ignite-Feed-TS",
   "name": "fundamentos-reactjs-ts",
   "private": true,
   "version": "0.0.0",
@@ -7,13 +8,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages - d dist"
   },
   "dependencies": {
+    "date-fns": "^2.30.0",
+    "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-     "date-fns": "^2.30.0",
-    "phosphor-react": "^1.4.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
@@ -24,6 +27,7 @@
     "eslint": "^8.44.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
   }
